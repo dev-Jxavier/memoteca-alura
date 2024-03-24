@@ -1,0 +1,28 @@
+{
+  "thoughts": [
+    {
+      "id": "2",
+      "content": "Que bom que você veio :)",
+      "author": "Dev",
+      "model": "modelo1"
+    },
+    {
+      "id": "3",
+      "content": "Que bom que você veio :)",
+      "author": "Dev",
+      "model": "modelo3"
+    },
+    {
+      "id": "26f5",
+      "content": "Testando",
+      "author": "Service http",
+      "model": "modelo3"
+    },
+    {
+      "id": "63f9",
+      "content": "Testando pensamento com routerLink",
+      "author": "deu tudo certo fi",
+      "model": "modelo2"
+    }
+  ]
+}
