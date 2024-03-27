@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,7 @@ import { CardThoughtComponent } from './components/thoughts/card-thought/card-th
 import { HttpClientModule } from '@angular/common/http';
 import { RemoveThoughtComponent } from './components/thoughts/remove-thought/remove-thought.component';
 import { EditThoughtComponent } from './components/thoughts/edit-thought/edit-thought.component';
+import { PaginationButtonComponent } from './components/thoughts/list-thoughts/pagination-button/pagination-button.component';
 
 @NgModule({
   declarations: [
@@ -23,8 +24,9 @@ import { EditThoughtComponent } from './components/thoughts/edit-thought/edit-th
     CardThoughtComponent,
     RemoveThoughtComponent,
     EditThoughtComponent,
+    PaginationButtonComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

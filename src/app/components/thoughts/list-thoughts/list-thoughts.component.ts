@@ -8,14 +8,34 @@ import { ThoughtService } from '../thought.service';
   styleUrl: './list-thoughts.component.css'
 })
 export class ListThoughtsComponent {
-  constructor(private thoughtService: ThoughtService){
+  constructor(private thoughtService: ThoughtService) {
   }
 
   listThoughts: Thought[] = []
+  currentPage: number = 1
+  showPaginationButton: boolean = true
+  search: string = ""
 
-  ngOnInit(): void{
-    this.thoughtService.list().subscribe((listThoughts) => {
+  ngOnInit(): void {
+    this.thoughtService.list(this.currentPage, this.search).subscribe((listThoughts) => {
       this.listThoughts = listThoughts
+    })
+  }
+
+  searchThoughts() {
+    this.currentPage = 1;
+    this.showPaginationButton = true;
+    this.thoughtService.list(this.currentPage, this.search).subscribe((listThoughts) => {
+      this.listThoughts = listThoughts
+    })
+  }
+
+  loadMoreThoughts() {
+    this.thoughtService.list(++this.currentPage, this.search).subscribe((newThoughts) => {
+      this.listThoughts.push(...newThoughts)
+      if (!newThoughts.length) {
+        this.showPaginationButton = false
+      }
     })
   }
 
