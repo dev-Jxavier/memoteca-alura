@@ -5,6 +5,12 @@
     <p class="conteudo">{{thought.content}}</p>
     <p class="autoria"><b>{{thought.author}}</b></p>
     <div class="acoes">
+        <button class="botao-favorito">
+            <img
+                src="../../../../assets/imagens/icone-favorito-{{changeIconFavorite()}}.png"
+                alt="botao favorito {{changeIconFavorite()}}"
+                (click)="changeFavorite()">
+        </button>
         <button class="botao-editar"
             routerLink="/thought/editThought/{{thought.id}}"><img
                 src="../../../../assets/imagens/icone-editar.png"

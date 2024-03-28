@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { RouteReuseStrategy, RouterModule, Routes } from '@angular/router';
 import { CreateThoughtsComponent } from './components/thoughts/create-thoughts/create-thoughts.component';
 import { ListThoughtsComponent } from './components/thoughts/list-thoughts/list-thoughts.component';
 import { RemoveThoughtComponent } from './components/thoughts/remove-thought/remove-thought.component';
 import { EditThoughtComponent } from './components/thoughts/edit-thought/edit-thought.component';
+import { CustomReuseStrategy } from './custom-reuse-strategy';
 
 const routes: Routes = [
   {
@@ -17,7 +18,10 @@ const routes: Routes = [
   },
   {
     path: "list",
-    component: ListThoughtsComponent
+    component: ListThoughtsComponent,
+    data: {
+      reuseComponent: true
+    }
   },
   {
     path: "thought/removeThought/:id",
@@ -30,7 +34,8 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, { onSameUrlNavigation: 'reload' })],
+  exports: [RouterModule],
+  providers: [{ provide: RouteReuseStrategy, useClass: CustomReuseStrategy }]
 })
 export class AppRoutingModule {}

@@ -13,12 +13,11 @@ export class RemoveThoughtComponent {
     id: '0',
     content: '',
     author: '',
-    model: 'modelo1'
+    model: 'modelo1',
+    favorite: false
   }
 
-  constructor(private thoughtService: ThoughtService, private router: Router, private activatedRoute: ActivatedRoute) {
-
-  }
+  constructor(private thoughtService: ThoughtService, private router: Router, private activatedRoute: ActivatedRoute) {}
 
   ngOnInit(): void {
     const id = this.activatedRoute.snapshot.paramMap.get('id')

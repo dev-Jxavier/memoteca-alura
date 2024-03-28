@@ -10,17 +10,26 @@ export class ThoughtService {
   private readonly BASE_URL = "http://localhost:3000/thoughts"
   constructor(private http: HttpClient) {}
 
-  list(page: number, filter: string): Observable<Thought[]> {
+  list(page: number, filter: string, favorite: boolean): Observable<Thought[]> {
     const limit = 3
-    const params = new HttpParams()
+    let params = new HttpParams()
       .set('_page', page)
       .set('_limit', limit);
 
     if (filter.trim().length > 2) {
-      params.set('q', filter)
+      params = params.set('q', filter)
+    }
+
+    if (favorite) {
+      params = params.set("favorite", favorite)
     }
 
     return this.http.get<Thought[]>(this.BASE_URL, { params });
+  }
+
+  changeFavorite(thought: Thought): Observable<Thought> {
+    thought.favorite = !thought.favorite
+    return this.edit(thought)
   }
 
   create(thought: Thought): Observable<Thought> {
