@@ -1,6 +1,7 @@
+<img src="./src/assets/imagens/logo-memoteca.png" alt="logo memoteca">
+
 ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white)
 
-<img src="./src/assets/imagens/logo-memoteca.png" alt="logo memoteca">
 
 A Memoteca é uma ferramenta projetada para adicionar, listar, excluir, favoritar e editar seus pensamentos mais cativantes, citações ou trechos de músicas. Este projeto foi desenvolvido durante o curso oferecido pela *Alura*.
 
@@ -24,4 +25,4 @@ npm run start
 
 ## 📝 Licença
 
-Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](./LICENSE) para mais detalhes.
