@@ -1,27 +1,27 @@
-# Memoteca
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![RxJS](https://img.shields.io/badge/rxjs-%23B7178C.svg?style=for-the-badge&logo=reactivex&logoColor=white)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.0.
+<img src="./src/assets/imagens/logo-memoteca.png" alt="logo memoteca">
 
-## Development server
+A Memoteca é uma ferramenta projetada para adicionar, listar, excluir, favoritar e editar seus pensamentos mais cativantes, citações ou trechos de músicas. Este projeto foi desenvolvido durante o curso oferecido pela *Alura*.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Projeto finalizado
 
-## Code scaffolding
+Projeto com propósito para estudo próprio e fixação de conceitos de estrutura e arquitetura do angular.js.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 💻 Pré-requisitos
 
-## Build
+Antes de começar, verifique se você possui o **Node v18.0^** instalado em sua máquina
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🚀 Instalando e executando Memoteca
 
-## Running unit tests
+Para instalar e executar o Memoteca, siga estas etapas:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+```
+npm install
+npm run start
+```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 📝 Licença
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Esse projeto está sob licença. Veja o arquivo [LICENÇA](LICENSE.md) para mais detalhes.
