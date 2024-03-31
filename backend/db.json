@@ -1,60 +1,11 @@
 {
   "thoughts": [
     {
-      "id": "2",
       "content": "Que bom que você veio :)",
-      "author": "Dev",
+      "author": "sim",
       "model": "modelo1",
-      "favorite": false
-    },
-    {
-      "id": "3",
-      "content": "Que bom que você veio :)",
-      "author": "Dev",
-      "model": "modelo3",
-      "favorite": false
-    },
-    {
-      "id": "26f5",
-      "content": "Testando",
-      "author": "Service http",
-      "model": "modelo3",
-      "favorite": true
-    },
-    {
-      "id": "63f9",
-      "content": "Testando pensamento com routerLink",
-      "author": "deu tudo certo fi",
-      "model": "modelo2",
-      "favorite": false
-    },
-    {
-      "id": "23fc",
-      "content": "a",
-      "author": "a",
-      "model": "modelo1",
-      "favorite": false
-    },
-    {
-      "id": "9680",
-      "content": "1",
-      "author": "123",
-      "model": "modelo1",
-      "favorite": false
-    },
-    {
-      "id": "4780",
-      "content": "teste",
-      "author": "teeeeeeeeeee",
-      "model": "modelo2",
-      "favorite": false
-    },
-    {
-      "content": "bom",
-      "author": "bom",
-      "model": "modelo2",
       "favorite": false,
-      "id": "Sy0fFvV"
+      "id": 1
     }
   ]
 }

@@ -25,7 +25,7 @@ export class CreateThoughtsComponent {
         Validators.minLength(3)
       ])],
       model: 'modelo1',
-      favorite: 'false'
+      favorite: false
     })
   }
 
